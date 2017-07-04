@@ -1,12 +1,10 @@
-from flask import Flask
+#
+# IMPORTANT: Put any additional includes below this line.  If placed above this
+# line, it's possible required libraries won't be in your searchable path
+#
 
-app = Flask(__name__)
+from flaskapp import app as application
 
-
-@app.route('/')
-def index():
-    return "Hello World!"
-
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+#
+# Below for testing only
+#
